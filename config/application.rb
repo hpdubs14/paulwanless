@@ -1,6 +1,11 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails/all'
+#require 'rails/all'
+require "action_controller/railtie"
+require "action_mailer/railtie"
+require "active_resource/railtie"
+require "rails/test_unit/railtie"
+require "sprockets/railtie" # Uncomment this line for Rails 3.1+
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -12,12 +17,12 @@ end
 module Paulwanless
   class Application < Rails::Application
     #Generator for mongo mapper
-    config.generators do |g|
-       g.orm :mongo_mapper    # :active_record
-       g.template_engine :erb # :haml
-       g.test_framework :rspec, :fixture => true, :views => false
-       g.fixture_replacement :factory_girl, :dir => "spec/factories"
-     end
+    # config.generators do |g|
+    #    g.orm :mongo_mapper    # :active_record
+    #    g.template_engine :erb # :haml
+    #    g.test_framework :rspec, :fixture => true, :views => false
+    #    g.fixture_replacement :factory_girl, :dir => "spec/factories"
+    #  end
     
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -63,5 +68,11 @@ module Paulwanless
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # Supresses the generation of view and helper rspec tests
+    config.generators do |g|
+      g.view_specs false
+      g.helper_specs false
+    end
   end
 end
