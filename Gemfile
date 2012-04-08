@@ -4,7 +4,7 @@ gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+# gem "mongo_mapper"
 gem 'sqlite3'
 
 # Gems used only for assets and not required
@@ -20,9 +20,14 @@ group :development do
  gem 'rvm-capistrano'
 end
 
-
-
 gem 'jquery-rails'
+
+group :test do
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'factory_girl'
+  gem 'awesome_print'
+end
 
 group :production do
 

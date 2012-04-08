@@ -1,6 +1,6 @@
 set :rvm_path, "$HOME/.rvm"
-# set :rvm_ruby_string, 'ruby-1.9.3-p125@paulwanless'
-set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"") # Read from local system
+set :rvm_ruby_string, 'ruby-1.9.3-p125@paulwanless'
+# set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"") # Read from local system
 set :rvm_type, :user 
 set :normalize_asset_timestamps, false
 
@@ -24,7 +24,7 @@ set :deploy_to, "/var/www/#{application}"
 set :deploy_via, :remote_cache
 set :user, "passenger"
 set :use_sudo, false
-
+#set :keep_releases, 4
 
 #repo details
 set :scm, "git"
