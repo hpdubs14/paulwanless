@@ -99,6 +99,9 @@ GEM
       thor (~> 0.14.6)
     guard-rspec (0.5.5)
       guard (>= 0.8.4)
+    guard-spork (0.3.2)
+      guard (>= 0.8.4)
+      spork (>= 0.8.4)
     hashie (1.2.0)
     highline (1.6.11)
     hike (1.2.1)
@@ -187,6 +190,7 @@ GEM
       ffi (~> 1.0)
       multi_json (~> 1.0)
       rubyzip
+    spork (0.9.0)
     sprockets (2.1.2)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -232,6 +236,7 @@ DEPENDENCIES
   factory_girl_rails
   growl
   guard-rspec
+  guard-spork
   jquery-rails
   launchy
   mongoid
@@ -241,5 +246,6 @@ DEPENDENCIES
   rspec-rails
   rvm-capistrano
   sass-rails (~> 3.2.4)
+  spork
   uglifier (>= 1.2.3)
   will_paginate_mongoid

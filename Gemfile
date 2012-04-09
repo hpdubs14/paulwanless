@@ -39,10 +39,13 @@ group :test do
   gem 'awesome_print'
   gem 'database_cleaner'
   gem 'launchy'
+  gem 'guard-spork'
+  gem 'spork'
   
   #Test gems for OSX
   gem 'rb-fsevent', :require => false
   gem 'growl'
+  
 end
 
 group :production do
