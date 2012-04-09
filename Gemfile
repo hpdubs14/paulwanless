@@ -26,6 +26,7 @@ group :development do
  gem 'capistrano'
  gem 'rvm-capistrano'
  gem 'rspec-rails'
+ gem 'guard-rspec'
 end
 
 gem 'jquery-rails'
@@ -38,6 +39,10 @@ group :test do
   gem 'awesome_print'
   gem 'database_cleaner'
   gem 'launchy'
+  
+  #Test gems for OSX
+  gem 'rb-fsevent', :require => false
+  gem 'growl'
 end
 
 group :production do

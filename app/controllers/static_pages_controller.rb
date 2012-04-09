@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def work_experience
   end
+  
+  def work_tools    
+  end
 end

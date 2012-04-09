@@ -1,4 +1,7 @@
 Paulwanless::Application.routes.draw do
+  
+  get "static_pages/work_tools"
+
   get "static_pages/home"
 
   get "static_pages/bio"
