@@ -1,4 +1,10 @@
 Paulwanless::Application.routes.draw do
+  get "static_pages/home"
+
+  get "static_pages/bio"
+
+  get "static_pages/work_experience"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
