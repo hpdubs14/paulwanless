@@ -1,4 +1,10 @@
 Paulwanless::Application.routes.draw do
+  root to:  'static_pages#home' 
+  
+  match '/bio',                 to:  'static_pages#bio'
+  match '/engineering_tools',   to:  'static_pages#work_tools'
+  match '/work_portfolio',      to:  'static_pages#work_experience'
+  
   
   get "static_pages/work_tools"
 
