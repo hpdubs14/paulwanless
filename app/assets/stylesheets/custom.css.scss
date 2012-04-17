@@ -44,6 +44,28 @@ textarea {
   float: right !important;
 }
 
+.calign {
+	float:center;
+}
+
+.sidebar {
+	float: right;
+}
+
+#twitter {
+	margin-left: 3em;
+	.center-block{};	
+	p	{
+		font-size: 14px;
+	}
+}
+
+
+#yelp {
+	margin-left: 3em;
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+}
 
 /*footer*/
 

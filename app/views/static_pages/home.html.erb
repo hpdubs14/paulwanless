@@ -1,14 +1,73 @@
-<div class="left hero-unit">
-	<h1>Welcome</h1>
-	<p>This my personal website and it is currently under construction with Rail 3.2. Moved my domain away from GoDaddy to Namescheap and using Linode to host my VPS. Hope to have the site up soon</p>
-</div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span7">
+			<h1>Welcome</h1>
+			<p>This my personal website and it is currently under construction with Rail 3.2. Moved my domain away from GoDaddy to Namescheap and using Linode to host my VPS. Hope to have the site up soon</p>
+		</div>
+		<div class="span2">
+			<div class="" id="twitter">
+				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'profile',
+				  rpp: 5,
+				  interval: 31000,
+				  width: 200,
+				  height: 300,
+				  theme: {
+				    shell: {
+				      background: '#b8b8b8',
+				      color: '#000000'
+				    },
+				    tweets: {
+				      background: '#ffffff',
+				      color: '#000000',
+				      links: '#2e7dd1'
+				    }
+				  },
+				  features: {
+				    scrollbar: true,
+				    loop: false,
+				    live: true,
+				    behavior: 'all'
+				  }
+				}).render().setUser('paulwanless3').start();
+				</script>
+			</div>
 
-<div class="container">
-	<div class="badges">
-		<nav class="center">
-				<%= link_to image_tag("home/linode.png", size: "70x70", alt: "Linode"), "http://www.linode.com/?r=4db1065a79e9db35d9a1840b8e31044b9fcd8dda" %>
-				<%= link_to image_tag("home/mongodb-blue.png", alt: "MongoDB"), 'http://mongodb.org' %>
-				<%= link_to image_tag("home/rails.png", alt: "Rails"), 'http://rubyonrails.org' %>
-		</nav>
+			<div class="" id="yelp">
+				<!-- Begin Yelp Badge - get your own at http://www.yelp.com/bling -->
+				<div style="line-height: 1px"><div style="width:200px; height:40px; overflow:hidden; line-height: 100%; background-image : url(http://embed.yelpcdn.com/bling_borders?color=C41200&width=200&BGcolor=CCCCCC&position=top&height=40) "><a href="http://www.yelp.com"><img src="http://embed.yelpcdn.com/static/201012161522729853/img/p.gif" style="height: 20px; width: 40px; margin-top: 2px; margin-left: 80px; margin-right: 80px; border:none; "/></a><div style="text-align:center"><a href="http://www.yelp.com/user_details?userid=8FK-q0KgiYxTr_0eJ6e58w" style="font-family:arial; color:#FFFFFF; font-size: 12px !important; ">Recent reviews by Paul W.</a></div></div><iframe frameborder="0" width="200" height="295" scrolling="no" src="http://www.yelp.com/blogbadgemap?v=2&amp;userid=8FK-q0KgiYxTr_0eJ6e58w&amp;width=200&amp;height=295&amp;uicolor=C41200&amp;textcolor=FFFFFF&amp;type=latest&amp;speed=20">
+				</iframe>
+				<div style="width:200px; height:15px; text-align : center; line-height: 100%; background-image : url(http://embed.yelpcdn.com/bling_borders?color=C41200&width=200&BGcolor=CCCCCC&position=bottom&height=15) "><a href="http://www.yelp.com/bling" style="font-family:arial; color:#FFFFFF; font-size: 12px !important; ">What&#39;s this?</a></div>
+				</div><!-- End Yelp Badge - get your own at http://www.yelp.com/bling -->
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- <div>
+		<div id="twitter_t"></div>
+		<div id="twitter_m">
+		   <div id="twitter_container">
+		       <ul id="twitter_update_list"></ul>
+		   </div>
+		</div>
+		<div id="twitter_b">
+		<script src="http://twitter.com/javascripts/blogger.js" type="text/javascript"></script>
+		<script src="http://twitter.com/statuses/user_timeline/paulwanless3.json?callback=twitterCallback2&count=5" type="text/javascript"></script>
+	</div> -->
+
+
+	<div class="container">
+		<div class="badges">
+			<nav class="center">
+					<%= link_to image_tag("home/linode.png", size: "70x70", alt: "Linode"), "http://www.linode.com/?r=4db1065a79e9db35d9a1840b8e31044b9fcd8dda" %>
+					<%= link_to image_tag("home/mongodb-blue.png", alt: "MongoDB"), 'http://mongodb.org' %>
+					<%= link_to image_tag("home/rails.png", alt: "Rails"), 'http://rubyonrails.org' %>
+			</nav>
+		</div>
 	</div>
 </div>
