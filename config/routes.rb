@@ -4,6 +4,7 @@ Paulwanless::Application.routes.draw do
   match '/bio',                 to:  'static_pages#bio'
   match '/engineering_tools',   to:  'static_pages#work_tools'
   match '/work_portfolio',      to:  'static_pages#work_experience'
+  match '/blog',                to:  'static_pages#blog'
   
   
   get "static_pages/work_tools"
@@ -13,6 +14,7 @@ Paulwanless::Application.routes.draw do
   get "static_pages/bio"
 
   get "static_pages/work_experience"
+  get "static_pages/blog"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
