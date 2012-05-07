@@ -10,15 +10,22 @@ base-hostname="paulwanless3"
 tumblr_options = {}
 
 Tumblr_OAuth_Key="?api_key=JDZInwsWYidlUMnQOSOKZj7lbVohvioccsBvaRc1vDYKdtWROt"
-response = Net::HTTP.get_response(URI.parse('http://api.tumblr.com/v2/blog/paulwanless3.tumblr.com/info#{Tumblr_OAuth_Key}'))
-  case response
-  when Net::HTTPSuccess
-    puts response.body
-  else
-    puts response.error!
+
+class Tumblr
+  
+  def initialize
+     @auth = {:client_id => CLIENT_ID, :client_secret => CLIENT_SECRET}
   end
   
-
-def initialize(base_hostname)
-  
+  begin
+  response = Net::HTT.get_response(URI.parse('http://api.tumblr.com/v2/blog/paulwanless3.tumblr.com/info#{Tumblr_OAuth_Key}'))
+    case response
+    when Net::HTTPSuccess
+      puts response.body
+    else
+      puts response.error!
+    end
+  rescue
+    puts "Cannot connect"
+  end
 end

@@ -243,6 +243,7 @@ DEPENDENCIES
   launchy
   mongoid
   mongoid-rspec
+  nokogiri
   rails (= 3.2.3)
   rb-fsevent
   rspec-rails
