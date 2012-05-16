@@ -15,6 +15,8 @@ gem 'devise'
 gem 'will_paginate_mongoid'
 gem 'cantango'
 gem 'nokogiri'
+gem 'rolify'
+gem 'cancan'
 
 # Gems used only for assets and not required
 # in production environments by default.
