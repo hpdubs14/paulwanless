@@ -168,6 +168,7 @@ GEM
     rb-fsevent (0.9.0)
     rdoc (3.12)
       json (~> 1.4)
+    rolify (3.1.0)
     rspec (2.9.0)
       rspec-core (~> 2.9.0)
       rspec-expectations (~> 2.9.0)
@@ -231,6 +232,7 @@ DEPENDENCIES
   awesome_print
   bootstrap-sass
   bson_ext
+  cancan
   cantango
   capistrano
   capybara (>= 1.1.2)
@@ -250,6 +252,7 @@ DEPENDENCIES
   nokogiri
   rails (= 3.2.3)
   rb-fsevent
+  rolify
   rspec-rails
   rvm-capistrano
   sass-rails (~> 3.2.4)
