@@ -43,6 +43,7 @@ group :test do
   gem 'launchy'
   gem 'guard-spork'
   gem 'spork'
+  gem 'email_spec'
   
   #Test gems for OSX
   gem 'rb-fsevent', :require => false
