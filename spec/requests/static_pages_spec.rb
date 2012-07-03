@@ -8,8 +8,7 @@ describe "StaticPages" do
     before { visit root_path}
     #refactored for subject {page} and with spec/support/utilities.rb
     it { should have_selector('h1',     text: 'Welcome') }
-    it { should have_selector('title',  text: full_title('')) }
-    
+    it { should have_selector('title',  text: full_title('Home')) }
   end
   
   describe "Bio" do
