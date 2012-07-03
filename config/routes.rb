@@ -17,6 +17,8 @@ Paulwanless::Application.routes.draw do
 
   get "static_pages/work_experience"
   get "static_pages/blog"
+  
+  devise_for :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
