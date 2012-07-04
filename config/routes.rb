@@ -19,6 +19,9 @@ Paulwanless::Application.routes.draw do
   get "static_pages/blog"
   
   devise_for :users
+  
+  match "*path" => 'error#not_found'
+  # match '*path', :controller => 'application', :action => 'not_found'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
