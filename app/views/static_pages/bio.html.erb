@@ -1,11 +1,25 @@
 <% provide(:title, 'Bio') %>
 <script>
     $(document).ready(function() {
-        $('.fancybox').fancybox();
+        $(".fancyFrame").click(function() {
+			$.fancybox({
+				'minWidth': 700
+				'width': '70%', // or whatever
+				'height': '99%',
+				'autoDimensions': true,
+				'overlayShow': true,
+				'content': '<embed src="'+this.href+'#nameddest=self&page=1&view=FitH,0&zoom=80,0,0" type="application/pdf" height="99%" width="100%" />', 
+				'hideOnContentClick': false,
+				'onClosed': function() {
+				     $("#fancybox-inner").empty();
+				   }
+			});
+			return false;
+		}); //end click
     });
 </script>
 
-<div class="center hero-unit">
+<div class="center span10 hero-unit">
 	<h1>Biography</h1>
 	<p><br /></p>
 	<div>
@@ -28,6 +42,7 @@
 	
 	<div>
 		<p>Check out my visual resume here</p>
-		<%= link_to( image_tag( "bio/Paul-Wanless-resume-visualized.png",alt: "Visual Resume"),"/data/Paul-Wanless-resume-visualized.pdf") %></a>
+		<%= link_to( image_tag( "bio/Paul-Wanless-resume-visualized.png",alt: "Visual Resume"),"/data/Paul-Wanless-resume-visualized.pdf", :class=>"fancyFrame",alt: "Visual Resume") %></a>
+		<!-- <iframe src="http://docs.google.com/gview?url=http://www.paulwanless.com/bio/data/Paul-Wanless-resume-visualized.pdf&embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe> -->
 	</div>
 </div>
