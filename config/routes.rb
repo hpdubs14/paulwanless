@@ -21,6 +21,13 @@ Paulwanless::Application.routes.draw do
   devise_for :users
   
   match "*path" => 'error#not_found'
+  
+  
+  # Google verify.
+  match 'google53a8a74ebb85f2c8.html', 
+        :to => proc { |env| [200, {}, ["google-site-verification: google53a8a74ebb85f2c8.html"]] }
+        
+        
   # match '*path', :controller => 'application', :action => 'not_found'
 
   # The priority is based upon order of creation:
