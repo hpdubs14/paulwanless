@@ -24,7 +24,7 @@ Paulwanless::Application.routes.draw do
   
   
   # Google verify.
-  match 'google53a8a74ebb85f2c8.html', 
+  match '/google53a8a74ebb85f2c8.html', 
         :to => proc { |env| [200, {}, ["google-site-verification: google53a8a74ebb85f2c8.html"]] }
         
         
