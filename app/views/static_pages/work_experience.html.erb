@@ -25,11 +25,22 @@
 	</ol>
 	
 	<h2>Timeline</h2>
-	<ul id="timeline" class="timeline">
-		<li>Present - <%= Time.now.strftime("%Y") %></li>	
-			<ul>
-				<li>3M</li>
-			</ul>
-		<li>2006</li>	
-	</ul>
+	<div id="container">
+		<ul id="timeline" class="timeline">
+			<li><%= Time.now.strftime("%Y") %>-Present</li>	
+				<ul class="timeline">
+					<li>3M</li>
+				</ul>
+			<li>2012</li>	
+			<li>2010</li>	
+			<li>2009</li>
+			<li>2008</li>
+			<li>2007</li>	
+			<li>2006</li>
+			<li>2005</li>
+			<li>2004</li>
+			<li>2003</li>
+			<li>2002</li>
+		</ul>
+	</div>
 </div>
