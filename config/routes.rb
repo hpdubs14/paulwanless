@@ -8,25 +8,22 @@ Paulwanless::Application.routes.draw do
   match '/work_portfolio',      to:  'static_pages#work_experience'
   match '/blog',                to:  'static_pages#blog'
   
-  
   get "static_pages/work_tools"
-
   get "static_pages/home"
-
   get "static_pages/bio"
-
   get "static_pages/work_experience"
   get "static_pages/blog"
   
+  
+  # Google verify attempt using route.
+  match '/google53a8a74ebb85f2c8.html', 
+        :to => proc { |env| [200, {}, ["google-site-verification: google53a8a74ebb85f2c8.html"]] }
+    
   devise_for :users
   
   match "*path" => 'error#not_found'
   
-  
-  # Google verify.
-  match '/google53a8a74ebb85f2c8.html', 
-        :to => proc { |env| [200, {}, ["google-site-verification: google53a8a74ebb85f2c8.html"]] }
-        
+
         
   # match '*path', :controller => 'application', :action => 'not_found'
 
