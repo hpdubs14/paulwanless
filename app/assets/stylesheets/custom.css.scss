@@ -88,6 +88,29 @@ textarea {
 	margin-bottom: 2em;
 }
 
+table tr {
+  height:1px;
+}
+
+table td {
+  width:100px;
+  vertical-align:middle;
+  background-color:#ccc;
+  border:1px solid #fff;
+}
+
+table td:hover {
+   background-color:#999;
+}
+
+table td .timeline_yr {
+  vertical-align:middle;
+  background-color:#ccc;
+  border:1px solid #fff;
+}
+
+
+
 /*footer*/
 
 footer {

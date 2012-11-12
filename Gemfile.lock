@@ -232,7 +232,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   bootstrap-sass
-  bson_ext
+  bson_ext (= 1.6.2)
   cancan
   cantango
   capistrano

@@ -11,7 +11,7 @@ gem 'recaptcha', :require => 'recaptcha/rails'
 
 #mongo drivers
 gem 'mongoid'
-gem 'bson_ext'
+gem 'bson_ext', '1.6.2'
 gem 'devise'
 gem 'will_paginate_mongoid'
 gem 'cantango'
