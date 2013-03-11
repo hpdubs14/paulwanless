@@ -4,6 +4,7 @@ gem 'rails', '3.2.3'
 gem 'bootstrap-sass'
 gem 'recaptcha', :require => 'recaptcha/rails'
 
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -56,7 +57,7 @@ group :test do
 end
 
 group :production do
-
+  gem 'newrelic_rpm'
 end
 
 # To use ActiveModel has_secure_password
