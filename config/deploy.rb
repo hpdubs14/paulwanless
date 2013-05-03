@@ -1,7 +1,7 @@
 set :rvm_path, "$HOME/.rvm"
 set :rvm_ruby_string, 'ruby-1.9.3-p125@paulwanless'
 # set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"") # Read from local system
-set :rvm_type, :user 
+set :rvm_type, :user
 set :normalize_asset_timestamps, false
 
 before 'deploy:setup', 'rvm:install_rvm'
@@ -22,13 +22,13 @@ role :db,  "50.116.52.170:22", :primary => true        # This is where Rails mig
 
 set :deploy_to, "/var/www/#{application}"
 set :deploy_via, :remote_cache
-set :user, "passenger"
+set :user, "deploy"
 set :use_sudo, false
 #set :keep_releases, 4
 
 #repo details
 set :scm, "git"
-set :scm_username, "passenger"
+set :scm_username, "deploy"
 set :repository,  "git@github.com:zigloo99/paulwanless.git"
 set :branch, "master"
 set :migrate_target,  :current
@@ -46,7 +46,7 @@ set :scm_verbose, true
 #   task :restart, :roles => :app, :except => { :no_release => true } do
 #     run "touch #{current_path}/tmp/restart.txt"
 #   end
-# 
+#
 #   [:start, :stop].each do |t|
 #     desc "#{t} task is a no-op with mod_rails"
 #     task t, :roles => :app do ; end
@@ -59,10 +59,14 @@ set :scm_verbose, true
 
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
-  
+
   task :start do ; end
   task :stop do ; end
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
+
+set :keep_releases, 10
+after "deploy:restart", "deploy:cleanup"
+
