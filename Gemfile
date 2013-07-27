@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '2.3.1.0'
 gem 'recaptcha', :require => 'recaptcha/rails'
 
 
@@ -47,13 +47,11 @@ group :test do
   gem 'launchy'
   gem 'guard-spork'
   gem 'spork'
-  gem 'email_spec'
+  # gem 'email_spec'
   gem 'launchy'
-
   #Test gems for OSX
   gem 'rb-fsevent', :require => false
   gem 'growl'
-
 end
 
 group :production do
