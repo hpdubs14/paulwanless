@@ -11,8 +11,8 @@ gem 'recaptcha', :require => 'recaptcha/rails'
 # gem 'sqlite3'
 
 #mongo drivers
-gem 'mongoid'
-gem 'bson_ext', '1.6.2'
+gem 'mongoid', '2.7.1'
+gem 'bson_ext', '1.8.6'
 gem 'devise'
 gem 'will_paginate_mongoid'
 gem 'cantango'
