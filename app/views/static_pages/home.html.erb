@@ -7,40 +7,14 @@
 				<h1>Welcome</h1>
 				<p>This my personal website and is a constant work in progress.</p>
 				<p>The site has various highlights of my work along with insight into some of my hobbies, insights, humor, and random musings while learning how to program with Rails. Enjoy!</p>
-				<p class="center">Check out <%= link_to "my Bio", "#{bio_path}" %> if you want to see if I fit with your company or new venture.</p>	
+				<p class="center">Check out <%= link_to "my Bio", "#{bio_path}" %> if you want to see if I fit with your company or new venture.</p>
 				<p class="center">Or <%= mail_to "paul@paulwanless.com", "email me", :subject => "Job/Consulting Inquiry from PaulWanless.com" %> to inquire about my available for positions consulting, or just to say hi.</p>
 			</div>
 		</div>
 		<div class="span2 sidebar">
 			<div class="" id="twitter">
-				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-				<script>
-				new TWTR.Widget({
-				  version: 2,
-				  type: 'profile',
-				  rpp: 5,
-				  interval: 31000,
-				  width: 200,
-				  height: 300,
-				  theme: {
-				    shell: {
-				      background: '#b8b8b8',
-				      color: '#000000'
-				    },
-				    tweets: {
-				      background: '#ffffff',
-				      color: '#000000',
-				      links: '#2e7dd1'
-				    }
-				  },
-				  features: {
-				    scrollbar: true,
-				    loop: false,
-				    live: true,
-				    behavior: 'all'
-				  }
-				}).render().setUser('paulwanless3').start();
-				</script>
+				<a class="twitter-timeline"  href="https://twitter.com/paulwanless3"  data-widget-id="361551963202134017">Tweets by @paulwanless3</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
 		</div>
 	</div>
@@ -52,5 +26,5 @@
 					<%= link_to image_tag("home/rails.png", alt: "Rails"), 'http://rubyonrails.org' %>
 			</nav>
 		</div> -->
-	</div>	
+	</div>
 </div>
