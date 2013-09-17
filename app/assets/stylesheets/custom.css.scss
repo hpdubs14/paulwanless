@@ -120,6 +120,134 @@ table td .timeline_yr {
 }
 
 
+//  Worktimeline test
+
+#main-timeline {
+    // background: url("../../images/timeline-line.png") repeat-y scroll 100px top transparent;
+    margin: 0 auto;
+    // overflow: hidden;
+    padding-top: 20px;
+    // width: 1136px;
+}
+#main-timeline:before, #main-timeline:after {
+    content: " ";
+    display: table;
+}
+#main-timeline:after {
+    clear: both;
+}
+
+.time-marker {
+    // background: url("../../images/timeline-circle.png") no-repeat scroll right top / 59px 59px transparent;
+    float: left;
+    height: 59px;
+    margin-left: -72px;
+    margin-top: 20px;
+    text-align: right;
+    width: 100px;
+}
+
+.time-marker .month {
+    color: #A9A9A9;
+    display: inline-block;
+    font-size: 14px;
+    padding-top: 13px;
+}
+.time-marker .day {
+    color: #CBB888;
+    font-size: 15px;
+    font-weight: bold;
+}
+.time-marker .year {
+    color: #ccc;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 13px;
+    margin-right: 17px;
+    margin-top: 18px;
+}
+
+.time-marker.end {
+    margin-top: -15px;
+}
+
+.time-marker.start {
+}
+
+.timeline-work-wrapper {
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 104px;
+    margin-top: 30px;
+    overflow: visible;
+
+}
+
+.timeline-work-wrapper:before, .timeline-work-wrapper:after {
+    content: " ";
+    display: table;
+}
+.timeline-work-wrapper:after {
+    clear: both;
+    overflow: visible;
+}
+.timeline-work-entry {
+    line-height: 19px;
+    margin-left: 68px;
+    width: 570px;
+}
+.timeline-work-entry h2 {
+    color: #716A60;
+    font-family: proxima-nova-1,proxima-nova-2,Palatino,serif;
+    font-size: 23px;
+    line-height: 34px;
+    margin-bottom: 25px;
+}
+.timeline-work-entry p.llamar-la-atencion {
+    color: #000000;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 23px 0;
+}
+.timeline-work-entry p.llamar-la-atencion strong {
+    color: #333333;
+}
+.timeline-work-entry img {
+    border-radius: 3px 3px 3px 3px;
+    float: left;
+    height: 250px;
+    margin: 4px;
+}
+.timeline-work-entry .second-row {
+    height: 170px;
+}
+.timeline-work-entry .third-row {
+    height: 231px;
+}
+.timeline-work-entry a img {
+    border: 3px solid #D4CEC4;
+}
+.timeline-work-entry a:hover img {
+    border-color: #918471;
+}
+.timeline-work-entry a:active, .timeline-entry a:focus {
+    outline: medium none;
+}
+.timeline-entry ul a {
+    font-size: 14px;
+    font-weight: bold;
+}
+.timeline-work-entry li {
+    clear: both;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+
+
+
 
 /*footer*/
 

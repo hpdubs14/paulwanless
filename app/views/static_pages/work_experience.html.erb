@@ -1,9 +1,34 @@
 <% provide(:title, 'Work Portfolio') %>
 
-<div class="left hero-unit">
+<div>
 	<h1>Work Portfolio</h1>
 	<p><em>Under construction</em></p>
 	<h2>Companies and Positions</h2>
+	<section id="main-timeline">
+		<section class="timeline-work-wrapper">
+			<section class="time-marker end">
+				<span class="year">'<%=(Time.now).strftime("%y")%></span>
+				<span class="month"><%=(Time.now).strftime("%b")%></span>
+				<br>
+				<span class="day"><%=(Time.now).strftime("%e")%></span>
+			</section>
+			<section class="timeline-work-entry">
+				<h2 class="company">Company 1</h2>
+				<span class="location">Waltham, MA</span>
+				<p>This is stuff I did at one point but I'm testing to see if how it wraps etct with smaller windows and how I need to format it and i need more and amore informatoin to try and see what iis going on.</p>
+			</section>
+			<section class="time-marker start">
+				<span class="year">'12</span>
+				<span class="month">Nov</span>
+				<br>
+				<span class="day">1</span>
+			</section>
+		</section>
+	</section>
+
+
+
+
 	<ol class="unstyled">
 		<li><strong>Dentsply - Dentsply Implants</strong></li>
 			<dl class="work_title">
@@ -13,7 +38,7 @@
 			<dl class="work_title">
 				<li>Senior Manufacturing Engineer</li>
 			</dl>
-		<li><strong>Brontes Technologies: a 3M subsidiary</strong></li>
+		<li><strong>Brontes Technologies</strong></li>
 			<dl class="work_title">
 				<li>Process Engineer</li>
 			</dl>
@@ -21,36 +46,31 @@
 			<dl class="work_title">
 				<li>Optimized Operations Engineer</li>
 			</dl>
-
-		<li><strong>Galyan's <em>(currently Dick Sporting Goods)</em></strong></li>
+		<li><strong>3M Electronics Solutions Division</strong></li>
 			<dl class="work_title">
-				<li>Sport's Equipment Sales Associate</li>
-				<li>Climbing wall facilitator</li>
-			</dl>
-		<li><strong>M.F. Fleischhacker</strong></li>
-			<dl class="work_title">
-				<li>Masonry Laborer/Finisher</li>
-			</dl>
-		<li><strong>University of Minnesota - Housing and Residential Life</strong></li>
-			<dl class="work_title">
-				<li>Community Advisor (<em>AKA Residential Advisor(RA))</em></li>
-			</dl>
-		<li><strong>3M Display and Graphics</strong></li>
-			<dl class="work_title">
-				<li>Technical Aide</li>
+				<li>Process Engineer</li>
 			</dl>
 		<li><strong>Cardinal Glass</strong></li>
 			<dl class="work_title">
 				<li>Production Engineer</li>
 			</dl>
-		<li><strong>3M Electronics Solutions Division</strong></li>
+		<li><strong>3M Display and Graphics</strong></li>
 			<dl class="work_title">
-				<li>Process Engineer</li>
+				<li>Technical Aide</li>
 			</dl>
-
-
-
-
+		<li><strong>University of Minnesota - Housing and Residential Life</strong></li>
+			<dl class="work_title">
+				<li>Community Advisor (<em>AKA Residential Advisor(RA))</em></li>
+			</dl>
+		<li><strong>M.F. Fleischhacker</strong></li>
+			<dl class="work_title">
+				<li>Masonry Laborer/Finisher</li>
+			</dl>
+		<li><strong>Galyan's <em>(currently Dick Sporting Goods)</em></strong></li>
+			<dl class="work_title">
+				<li>Sport's Equipment Sales Associate</li>
+				<li>Climbing wall facilitator</li>
+			</dl>
 	</ol>
 
 	<h2>Skills/Experience</h2>
