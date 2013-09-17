@@ -1,10 +1,11 @@
 require 'rubygems'
 require 'spork'
+require 'capybara/rspec'
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
 
 Spork.prefork do
-  # Loading more in this block will cause your tests to run faster. However, 
+  # Loading more in this block will cause your tests to run faster. However,
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
   # This file is copied to spec/ when you run 'rails generate rspec:install'
@@ -47,11 +48,11 @@ Spork.each_run do
   # This code will be run each time you run your specs.
   # Factory.factories.clear
   # Dir[Rails.root.join("spec/factories/**/*.rb")].each{|f| load f}
-  
+
   #reloading routes
   Paulwanless::Application.reload_routes!
 
-  # Use a .gitignore’d file to allow developers to dynamically modify the each_run block:  
+  # Use a .gitignore’d file to allow developers to dynamically modify the each_run block:
   # load "Sporkfile.rb" if File.exists?("Sporkfile.rb")
 end
 
