@@ -14,9 +14,9 @@ require "bundler/capistrano"
 
 #main details
 set :application, "paulwanless"
-role :web, "50.116.52.170:22"                          # Your HTTP server, Apache/etc
-role :app, "50.116.52.170:22"                          # This may be the same as your `Web` server
-role :db,  "50.116.52.170:22", :primary => true        # This is where Rails migrations will run
+role :web, "50.116.52.170:4444"                          # Your HTTP server, Apache/etc
+role :app, "50.116.52.170:4444"                          # This may be the same as your `Web` server
+role :db,  "50.116.52.170:4444", :primary => true        # This is where Rails migrations will run
 # role :db,  "your slave db-server here"
 set :rails_env, "production"
 
