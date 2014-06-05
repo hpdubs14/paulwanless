@@ -18,13 +18,14 @@ role :web, "50.116.52.170:22"                          # Your HTTP server, Apach
 role :app, "50.116.52.170:22"                          # This may be the same as your `Web` server
 role :db,  "50.116.52.170:22", :primary => true        # This is where Rails migrations will run
 # role :db,  "your slave db-server here"
-
+set :rails_env, "production"
 
 set :deploy_to, "/var/www/#{application}"
 set :deploy_via, :remote_cache
 set :user, "deploy"
 set :use_sudo, false
-#set :keep_releases, 4
+set :keep_releases, 4
+
 
 #repo details
 set :scm, "git"
