@@ -1,5 +1,5 @@
 Paulwanless::Application.routes.draw do
-  devise_for :users
+  # devise_for :users
 
   root to:  'static_pages#home' 
   
@@ -19,7 +19,7 @@ Paulwanless::Application.routes.draw do
   match '/google53a8a74ebb85f2c8.html', 
         :to => proc { |env| [200, {}, ["google-site-verification: google53a8a74ebb85f2c8.html"]] }
     
-  devise_for :users
+  # devise_for :users
   
   match "*path" => 'error#not_found'
   

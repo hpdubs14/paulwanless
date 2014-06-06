@@ -13,7 +13,7 @@ gem 'sqlite3'
 #mongo drivers
 # gem 'mongoid', '2.7.1'
 gem 'bson_ext', '1.8.6'
-gem 'devise', '3.0.0'
+# gem 'devise', '3.0.0'
 # gem 'will_paginate_mongoid', '1.1.0'
 gem 'cantango', '0.9.4.7'
 gem 'nokogiri', '1.6.0'
