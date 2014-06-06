@@ -3,18 +3,18 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '2.3.1.0'
 gem 'recaptcha', :require => 'recaptcha/rails'
+gem 'sqlite3'
 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# gem 'sqlite3'
 
 #mongo drivers
-gem 'mongoid', '2.7.1'
+# gem 'mongoid', '2.7.1'
 gem 'bson_ext', '1.8.6'
 gem 'devise', '3.0.0'
-gem 'will_paginate_mongoid', '1.1.0'
+# gem 'will_paginate_mongoid', '1.1.0'
 gem 'cantango', '0.9.4.7'
 gem 'nokogiri', '1.6.0'
 gem 'rolify', '3.2.0'
